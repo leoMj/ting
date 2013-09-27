@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache updateCheck="false" monitoring="autodetect" dynamicConfig="false">
+
+    <diskStore path="java.io.tmpdir"/>
+
+    <defaultCache
+           maxElementsInMemory="1000"
+           eternal="false"
+           timeToIdleSeconds="3600"
+           timeToLiveSeconds="3600"
+           overflowToDisk="false"
+           diskSpoolBufferSizeMB="10" />
+
+    <!-- blog -->
+    <cache name="blogList"
+           maxElementsInMemory="300"
+           eternal="true" />
+
+    <cache name="blogListAdmin"
+           maxElementsInMemory="100"
+           eternal="true" />
+           
+    <cache name="blog"
+           maxElementsInMemory="100"
+           eternal="true" />
+    <!-- tags -->
+    <cache name="frontTagsList"
+           maxElementsInMemory="1"
+           eternal="true" />
+    <!-- tags -->
+    <cache name="commentList"
+           maxElementsInMemory="10"
+           eternal="true" />
+    <!-- 数据推送缓存 -->
+    <cache name="dataPush"
+           maxElementsInMemory="10"
+           eternal="true" />
+</ehcache>

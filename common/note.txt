@@ -1,0 +1,1 @@
+jfinal中 一个对象当主键类型为int（mysql中） 获取主键的方法 getInt 其他字段如果是int类型 则都用getLong
